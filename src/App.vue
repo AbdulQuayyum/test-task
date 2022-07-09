@@ -1,12 +1,17 @@
 <template>
   <div class="app">
+    <NavigationComponent />
     <router-view />
   </div>
 </template>
 
 <script>
+import NavigationComponent from "./Components/Navigation/NavigationComponent.vue"
 export default {
   name: "App",
+  components:{
+    NavigationComponent,
+  }
 };
 </script>
 
